@@ -88,7 +88,7 @@
         <!-- SIDEBAR -->
         <div class="container-fluid">
             <div class="row d-none d-md-block">
-                <div class="col-12 text-bg-dark min-vh-100">
+                <div class="col-12 px-0 text-bg-dark min-vh-100">
                     <div class="d-flex flex-column flex-shrink-0 py-2">
   
                         <!-- LOGO -->
@@ -172,6 +172,130 @@
         <!-- SIDEBAR -->
       </header>
     <!-- /HEADER -->
+
+    <!-- MAIN -->
+      <section class="col-md-9 flex-grow-1">
+        <div class="container">
+            <div class="row">
+                <!-- FORM -->
+                <form action="" class="needs-validation py-4 d-lg-flex">
+                    <div class="col-12 col-lg-7 me-4">
+                        <!-- NAME -->
+                        <div class="d-md-flex gap-md-5 align-items-center pb-4">
+                            <label for="nome" class="form-label me-1">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Mario" required>
+                        </div>
+                        <!-- /NAME -->
+    
+                        <!-- PRICE -->
+                        <div class="d-md-flex gap-md-5 align-items-center pb-4">
+                            <label for="prezzo" class="form-label">Prezzo</label>
+                            <input type="text" class="form-control" id="prezzo" placeholder="99.00€" required>
+                        </div>
+                        <!-- /PRICE -->
+    
+                        <!-- BRAND -->
+                        <div class="d-md-flex gap-md-5 align-items-center pb-4">
+                            <label for="marca" class="form-label me-1">Marca</label>
+                            <select class="form-select" aria-label="seleziona-marca" id="marca">
+                                <option selected>--Seleziona--</option>
+                                <option value="1">Samsung</option>
+                                <option value="2">Apple</option>
+                                <option value="3">Asus</option>
+                                <option value="4">HP</option>
+                                <option value="5">Logitech</option>
+                                <option value="6">TP-Link</option>
+                            </select>
+                        </div>
+                        <!-- /BRAND -->
+    
+                        <!-- DESCRIPTION -->
+                        <div class="pb-3">
+                            <textarea class="form-control" id="descrizione" aria-label="descrizione" rows="6" placeholder="Inserisci la descrizione del prodotto, massimo 100 caratteri" maxlength="100"></textarea>
+                        </div>
+                        <!-- /DESCRIPTION -->
+    
+                        <!-- IMG UPLOAD -->
+                        <div class="input-group pb-3">
+                            <input type="file" class="form-control" id="Immagine" aria-describedby="Immagine" aria-label="Upload">
+                            <span class="input-group-text" id="Immagine">Immagine</span>
+                        </div>
+                        <!-- /IMG UPLOAD -->
+    
+                        <!-- AVAILABILITY -->
+                        <div class="btn-group flex-wrap pb-3" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="Disponibile" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="Disponibile"><small>Disponibile</small></label>
+                            
+                            <input type="radio" class="btn-check" name="btnradio" id="Esaurito" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="Esaurito"><small>Esaurito</small></label>
+                            
+                            <input type="radio" class="btn-check" name="btnradio" id="Fuori Produzione" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="Fuori Produzione"><small>Fuori Produzione</small></label>
+    
+                            <input type="radio" class="btn-check" name="btnradio" id="In Arrivo" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="In Arrivo"><small>In Arrivo</small></label>
+                        </div>
+                        <!-- /AVAILABILITY -->
+
+                        <!-- SAVE -->
+                        <div class="col-12 d-none d-lg-inline-block">
+                            <button class="btn btn-primary" type="submit">Salva</button>
+                        </div>
+                        <!-- /SAVE -->
+                    </div>
+
+                    <!-- FEATURES -->
+                    <div class="col-12 col-lg-4 flex-grow-1">
+                        <!-- FEATURES -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="fotocamera">
+                                <label class="form-check-label stretched-link fw-medium" for="fotocamera"><small>Fotocamera Principale</small></label>
+                                <p class="text-body-secondary ms-4 mb-0"><small>foto di alta qualità e registrare video nitidi</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="schermo oled">
+                                <label class="form-check-label stretched-link fw-medium" for="schermo oled"><small>Schermo OLED</small></label>
+                                <p class="text-body-secondary ms-4 mb-0"><small>offre colori vividi per un'esperienza visiva straordinaria</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="cpu-octacore">
+                                <label class="form-check-label stretched-link fw-medium" for="cpu-octacore"><small>Processore Octa-core</small></label>
+                                <p class="text-body-secondary ms-4 mb-0"><small>prestazioni fluide e veloci per eseguire le applicazioni più esigenti</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="ricarica wireless">
+                                <label class="form-check-label stretched-link fw-medium" for="ricarica wireless"><small>Ricarica Wireless</small></label>
+                                <p class="text-body-secondary ms-4"><small>consente di ricaricare lo smartphone comodamente senza l'uso di cavi</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="5g">
+                                <label class="form-check-label stretched-link fw-medium" for="5g"><small>Connessione 5G</small></label>
+                                <p class="text-body-secondary ms-4 mb-0"><small>navigazione ultra veloce e streaming senza interruzioni</small></p>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="nfc">
+                                <label class="form-check-label stretched-link fw-medium" for="nfc"><small>Tecnologia NFC</small></label>
+                                <p class="text-body-secondary ms-4 mb-0"><small>per effettuare pagamenti senza contatto</small></p>
+                            </li>
+                        </ul>
+                        <!-- FEATURES -->
+                    </div>   
+                    <!-- /FEATURES -->
+
+                    <!-- SAVE -->
+                    <div class="col-12 d-lg-none pt-3">
+                        <button class="btn btn-primary" type="submit">Salva</button>
+                    </div>
+                    <!-- /SAVE -->                                
+                </form>
+                        
+                <!-- /FORM -->
+            </div>
+        </div>
+      </section>
+    <!-- /MAIN -->
     </div>
   </div>
     <!-- JAVASCRIPT -->
